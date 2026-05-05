@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@schwab.com",
+      "password": "demo1234",
+      "firstName": "Jonathan",
+      "lastName": "Smith",
+      "role": "Admin",
+      "avatar": null,
+      "balance": 125430.50,
+      "currency": "USD"
+    }
+  ],
+  "wallets": [
+    { "id": 1, "userId": 1, "coin": "Bitcoin",  "symbol": "BTC",  "balance": 0.842,  "valueUsd": 34570, "change30d": 4.2, "color": "#f7931a" },
+    { "id": 2, "userId": 1, "coin": "Steem",    "symbol": "STEEM","balance": 1240,   "valueUsd": 14470, "change30d": 4.0, "color": "#4ade80" },
+    { "id": 3, "userId": 1, "coin": "Dash",     "symbol": "DASH", "balance": 42.5,   "valueUsd": 54570, "change30d": 4.0, "color": "#4ade80" },
+    { "id": 4, "userId": 1, "coin": "Dropil",   "symbol": "DROP", "balance": 98200,  "valueUsd": 34570, "change30d": 4.0, "color": "#4ade80" }
+  ],
+  "orders": [
+    { "id": 1,  "userId": 1, "type": "sell", "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 2,  "userId": 1, "type": "sell", "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 3,  "userId": 1, "type": "sell", "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 4,  "userId": 1, "type": "sell", "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 5,  "userId": 1, "type": "sell", "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 6,  "userId": 1, "type": "buy",  "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 7,  "userId": 1, "type": "buy",  "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 8,  "userId": 1, "type": "buy",  "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 9,  "userId": 1, "type": "buy",  "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" },
+    { "id": 10, "userId": 1, "type": "buy",  "coin": "DASH", "price": 98.36, "amount": 0.25, "total": 147.00, "status": "open" }
+  ],
+  "transactions": [
+    { "id": 1,  "userId": 1, "txId": "#124567899654", "from": "Marquezz",   "to": "Jarinas Tom", "coin": "Bitcoin",  "coinSymbol": "BTC",  "coinColor": "#f7931a", "amount": 455.00,  "date": "January 23, 2022", "time": "5:21 PM", "status": "completed" },
+    { "id": 2,  "userId": 1, "txId": "#124567899655", "from": "Jack",       "to": "Marquezz",    "coin": "Ethereum", "coinSymbol": "ETH",  "coinColor": "#627eea", "amount": 455.00,  "date": "January 22, 2022", "time": "5:20 PM", "status": "completed" },
+    { "id": 3,  "userId": 1, "txId": "#124567899656", "from": "Marquezz",   "to": "Jarinas Tom", "coin": "Monero",   "coinSymbol": "XMR",  "coinColor": "#ff6600", "amount": 550.00,  "date": "January 21, 2022", "time": "5:20 PM", "status": "pending"   },
+    { "id": 4,  "userId": 1, "txId": "#124567899657", "from": "Jack",       "to": "Jarinas Tom", "coin": "Bitcoin",  "coinSymbol": "BTC",  "coinColor": "#f7931a", "amount": 168.00,  "date": "January 20, 2022", "time": "5:20 PM", "status": "completed" },
+    { "id": 5,  "userId": 1, "txId": "#124567899658", "from": "Marquezz",   "to": "Jonathan",    "coin": "Monero",   "coinSymbol": "XMR",  "coinColor": "#ff6600", "amount": 751.00,  "date": "January 19, 2022", "time": "5:20 PM", "status": "cancelled" },
+    { "id": 6,  "userId": 1, "txId": "#124567899659", "from": "Jarinas Tom","to": "Jonathan",    "coin": "Bitcoin",  "coinSymbol": "BTC",  "coinColor": "#f7931a", "amount": 100.00,  "date": "January 18, 2022", "time": "5:20 PM", "status": "completed" },
+    { "id": 7,  "userId": 1, "txId": "#124567899660", "from": "Marquezz",   "to": "Jarinas Tom", "coin": "Monero",   "coinSymbol": "XMR",  "coinColor": "#ff6600", "amount": 555.00,  "date": "January 17, 2022", "time": "5:20 PM", "status": "pending"   },
+    { "id": 8,  "userId": 1, "txId": "#124567899661", "from": "Marquezz",   "to": "Jarinas Tom", "coin": "Monero",   "coinSymbol": "XMR",  "coinColor": "#ff6600", "amount": 451.00,  "date": "January 16, 2022", "time": "5:20 PM", "status": "cancelled" },
+    { "id": 9,  "userId": 1, "txId": "#124567899662", "from": "Marquezz",   "to": "Jarinas Tom", "coin": "Bitcoin",  "coinSymbol": "BTC",  "coinColor": "#f7931a", "amount": 455.00,  "date": "January 15, 2022", "time": "5:20 PM", "status": "completed" },
+    { "id": 10, "userId": 1, "txId": "#124567899663", "from": "Jack",       "to": "Marquezz",    "coin": "Ethereum", "coinSymbol": "ETH",  "coinColor": "#627eea", "amount": 320.00,  "date": "January 14, 2022", "time": "5:20 PM", "status": "completed" }
+  ],
+  "marketStats": [
+    { "id": 1, "month": "Jan", "btc": 42000, "xrp": 0.52, "eth": 2200, "zec": 85, "ltc": 72 },
+    { "id": 2, "month": "Feb", "btc": 44000, "xrp": 0.48, "eth": 2400, "zec": 90, "ltc": 68 },
+    { "id": 3, "month": "Mar", "btc": 47000, "xrp": 0.61, "eth": 2800, "zec": 95, "ltc": 75 },
+    { "id": 4, "month": "Apr", "btc": 43000, "xrp": 0.55, "eth": 2600, "zec": 88, "ltc": 70 },
+    { "id": 5, "month": "May", "btc": 46000, "xrp": 0.58, "eth": 2900, "zec": 92, "ltc": 78 },
+    { "id": 6, "month": "Jun", "btc": 48000, "xrp": 0.62, "eth": 3100, "zec": 98, "ltc": 82 },
+    { "id": 7, "month": "Jul", "btc": 46500, "xrp": 0.59, "eth": 2950, "zec": 94, "ltc": 79 }
+  ]
+}
