@@ -97,10 +97,22 @@ export default function Wallet() {
   const [cardTheme, setCardTheme] = useState(2)
 
   useEffect(() => {
-    if (!isAuthenticated) navigate('/login', { replace: true })
+    if (!isAuthenticated) {
+      navigate('/login', { replace: true })
+    }
   }, [isAuthenticated, navigate])
 
-  if (!isAuthenticated) return null
+  // Show loading or redirect message while checking auth
+  if (!isAuthenticated) {
+    return (
+      <div className="flex items-center justify-center h-screen" style={{ backgroundColor: '#0d0824' }}>
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto mb-4" style={{ borderColor: '#c9a84c' }} />
+          <p className="text-gray-400">Redirecting to login...</p>
+        </div>
+      </div>
+    )
+  }
 
   const candleW = (CHART_W - PAD_L - PAD_R) / CANDLES.length
   const candleBodyW = Math.max(candleW * 0.5, 6)
@@ -454,11 +466,11 @@ export default function Wallet() {
                   ? transactions.slice(0, 3).map((tx) => (
                       <ActivityRow
                         key={tx.id}
-                        label={tx.type === 'deposit' ? 'Deposit' : tx.type === 'withdraw' ? 'ATM Cash withdrawal' : 'Trade'}
-                        time="06:24:45 AM"
-                        amount={tx.type === 'withdraw' ? `-$${tx.valueUsd.toLocaleString()}` : `+$${tx.valueUsd.toLocaleString()}`}
+                        label={`${tx.coin} Trade`}
+                        time={tx.time}
+                        amount={`$${tx.amount.toLocaleString()}`}
                         status={tx.status}
-                        isNegative={tx.type === 'withdraw'}
+                        isNegative={false}
                       />
                     ))
                   : (
