@@ -31,6 +31,7 @@ import Regulation from './pages/company/Regulation'
 import Dashboard from './pages/user/Dashboard'
 import Wallet from './pages/user/Wallet'
 import Account from './pages/user/Account'
+import Settings from './pages/user/Settings'
 import Transactions from './pages/user/Transactions'
 import CryptoPage from './pages/user/CryptoPage'
 import ExchangePage from './pages/user/ExchangePage'
@@ -70,6 +71,7 @@ export default function App() {
         <Route path="/user/dashboard" element={<Dashboard />} />
         <Route path="/user/wallet" element={<Wallet />} />
         <Route path="/user/account" element={<Account />} />
+        <Route path="/user/settings" element={<Settings />} />
         <Route path="/user/transactions" element={<Transactions />} />
         <Route path="/user/crypto" element={<CryptoPage />} />
         <Route path="/user/exchange" element={<ExchangePage />} />
